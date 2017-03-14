@@ -1,0 +1,52 @@
+{
+  "intents": [
+    {
+      "intent": "CommandIntent",
+      "slots": [
+        {
+          "name": "name",
+          "type": "GARAGE_NAMES"
+        },
+        {
+          "name": "command",
+          "type": "GARAGE_COMMANDS"
+        }
+      ]
+    },
+    {
+      "intent": "StatusIntent",
+      "slots": [
+        {
+          "name": "name",
+          "type": "GARAGE_NAMES"
+        },
+        {
+          "name": "state",
+          "type": "GARAGE_STATES"
+        }
+      ]
+    },
+    {
+      "intent": "HistoryIntent",
+      "slots": [
+        {
+          "name": "name",
+          "type": "GARAGE_NAMES"
+        },
+        {
+          "name": "state",
+          "type": "GARAGE_STATES"
+        }
+      ]
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+}

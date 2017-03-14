@@ -1,0 +1,29 @@
+Name: Garadget
+Invocation Name: garadget
+Skill Type: Custom
+Language: English (U.S.)
+Audio Player: No
+Service Endpoint Type: AWS Lambda ARN, North America
+Account Linking: Yes
+Authorization URL: https://www.garadget.com/api/oauth/authorize.php
+Authorization Grant Type: Auth Code Grant
+Access Token URI: https://www.garadget.com/api/oauth/token.php
+Privacy Policy URL: http://www.softcomplex.com/privacy_policy.html
+Category: Smart Home
+Countries & Region: In all countries and regions where Amazon distributes skills
+Short Skill Description: Alexa skill for Garadget - smart garage door controller
+Full Skill Description: Control and monitor your Garadget-equipped garage doors.
+
+Security Note: Currently Alexa does not authenticate the person issuing the request. Anybody within its hearing distance can command it to open your garage doors.
+Example Phrases:
+- Alexa, tell Garadget to close all doors
+- Alexa, ask Garadget the status of workshop garage
+- Alexa, ask Garadget about recent events
+
+Keywords: garage,door,home,automation,smart,home,garage,remote,garage,opener
+Does this skill allow users to make purchases or spend real money? No
+Does this Alexa skill collect users' personal information? No
+Is this skill directed to or does it target children under the age of 13? No
+Export Compliance: Check
+Terms of Use URL: Blank
+

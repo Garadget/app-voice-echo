@@ -1,0 +1,79 @@
+CommandIntent {command}
+CommandIntent {command} {name}
+CommandIntent to {command}
+CommandIntent to {command} my garage
+CommandIntent to {command} my door
+CommandIntent to {command} my garage door
+CommandIntent {command} my {name} door
+CommandIntent {command} my {name} garage
+CommandIntent {command} my {name} garage door
+CommandIntent to {command} door {name}
+CommandIntent to {command} garage {name}
+CommandIntent to {command} garage door {name}
+CommandIntent {command} {name} door
+CommandIntent {command} {name} garage door
+CommandIntent {command} door {name}
+CommandIntent {command} garage door {name}
+CommandIntent {command} the {name} door
+CommandIntent {name} door {command}
+CommandIntent {name} garage {command}
+CommandIntent {name} garage door {command}
+CommandIntent {command} door
+CommandIntent {command} doors
+CommandIntent {command} garage
+CommandIntent {command} garage doors
+CommandIntent {command} all
+CommandIntent {command} all doors
+CommandIntent {command} all garage doors
+
+StatusIntent {name}
+StatusIntent about {name}
+StatusIntent the status
+StatusIntent the status of {name} garage
+StatusIntent about the status
+StatusIntent about the status of {name}
+StatusIntent about the status of {name} door
+StatusIntent about the status of {name} garage
+StatusIntent about the status of {name} garage door
+StatusIntent about the current status
+StatusIntent report the current status
+StatusIntent report status
+StatusIntent what is the current status
+StatusIntent what is the status
+StatusIntent what is the status of my door
+StatusIntent what is the status of my doors
+StatusIntent what is the status of my garage
+StatusIntent what is the status of my garage doors
+StatusIntent what is the status of {name}
+StatusIntent what is the status of {name} door
+StatusIntent what is the status of {name} garage
+StatusIntent what is the status of {name} garage door
+StatusIntent if {name} is {state}
+StatusIntent is {name} {state}
+StatusIntent is {name} door {state}
+StatusIntent is {name} garage {state}
+StatusIntent is {name} garage door {state}
+StatusIntent is {name} {state} now
+StatusIntent is {name} door {state} now
+StatusIntent is {name} garage {state} now
+StatusIntent is {name} garage door {state} now
+StatusIntent is my {name} {state} now
+StatusIntent is my {name} door {state}
+StatusIntent is my {name} garage {state}
+StatusIntent is my {name} garage door {state}
+
+HistoryIntent when was {name} {state}
+HistoryIntent when was {name} door {state}
+HistoryIntent when was {name} garage {state}
+HistoryIntent when was {name} garage door {state}
+HistoryIntent how long is {name} {state}
+HistoryIntent how long is {name} door {state}
+HistoryIntent how long is {name} garage door {state}
+HistoryIntent how long was {name} {state}
+HistoryIntent how long was {name} door {state}
+HistoryIntent how long was {name} garage door {state}
+HistoryIntent what were the recent events
+HistoryIntent about history
+HistoryIntent about events
+HistoryIntent about recent events
+HistoryIntent about times
