@@ -25,7 +25,6 @@ CommandIntent {command} garage doors
 CommandIntent {command} all
 CommandIntent {command} all doors
 CommandIntent {command} all garage doors
-
 StatusIntent {name}
 StatusIntent about {name}
 StatusIntent the status
@@ -61,7 +60,6 @@ StatusIntent is my {name} {state} now
 StatusIntent is my {name} door {state}
 StatusIntent is my {name} garage {state}
 StatusIntent is my {name} garage door {state}
-
 HistoryIntent when was {name} {state}
 HistoryIntent when was {name} door {state}
 HistoryIntent when was {name} garage {state}

@@ -1,0 +1,136 @@
+CommandIntent {command}
+CommandIntent {command} {name}
+CommandIntent zu {command}
+CommandIntent {command} Garage
+CommandIntent {command} Garagen
+CommandIntent {command} Garagentor
+CommandIntent {command} Garagentore
+CommandIntent {command} Tor
+CommandIntent {command} Tore
+CommandIntent {command} Tuer
+CommandIntent {command} Tueren
+CommandIntent Garage {command}
+CommandIntent Garagen {command}
+CommandIntent Garagentor {command}
+CommandIntent Garagentore {command}
+CommandIntent Tor {command}
+CommandIntent Tore {command}
+CommandIntent Tuer {command}
+CommandIntent Tueren {command}
+CommandIntent {command} meine Garage
+CommandIntent {command} meine Garagen
+CommandIntent {command} mein Garagentor
+CommandIntent {command} meine Garagentore
+CommandIntent {command} mein Tor
+CommandIntent {command} meine Tore
+CommandIntent {command} meine Tuer
+CommandIntent {command} meine Tueren
+CommandIntent meine Garage {command}
+CommandIntent meine Garagen {command}
+CommandIntent mein Garagentor {command}
+CommandIntent meine Garagentore {command}
+CommandIntent mein Tor {command}
+CommandIntent meine Tore {command}
+CommandIntent meine Tuer {command}
+CommandIntent meine Tueren {command}
+CommandIntent {command} die Garage
+CommandIntent {command} die Garagen
+CommandIntent {command} das Tor
+CommandIntent {command} die Tore
+CommandIntent {command} das Garagentor
+CommandIntent {command} die Garagentore
+CommandIntent {command} die Tuer
+CommandIntent {command} die Tueren
+CommandIntent die Garage {command}
+CommandIntent die Garagen {command}
+CommandIntent das Tor {command}
+CommandIntent die Tore {command}
+CommandIntent das Garagentor {command}
+CommandIntent die Garagentore {command}
+CommandIntent die Tuer {command}
+CommandIntent die Tueren {command}
+CommandIntent {command} meine Garage {name}
+CommandIntent {command} mein Garagentor {name}
+CommandIntent {command} mein Tor {name}
+CommandIntent {command} die Garage {name}
+CommandIntent {command} das Tor {name}
+CommandIntent {command} das Garagentor {name}
+CommandIntent {command} Garage {name}
+CommandIntent {command} Garagentor {name}
+CommandIntent {command} Tor {name}
+CommandIntent meine Garage {name} zu {command}
+CommandIntent meine Garage zu {command}
+CommandIntent meine Garagen zu {command}
+CommandIntent Garage {name} zu {command}
+CommandIntent die Garage {name} zu {command}
+CommandIntent die Garage zu {command}
+CommandIntent die Garagen zu {command}
+CommandIntent Garage {name} zu {command}
+CommandIntent mein Tor {name} zu {command}
+CommandIntent mein Tor zu {command}
+CommandIntent meine Tore zu {command}
+CommandIntent Tor {name} zu {command}
+CommandIntent das Tor {name} zu {command}
+CommandIntent das Tor zu {command}
+CommandIntent die Tore zu {command}
+CommandIntent Tor {name} zu {command}
+CommandIntent das Garagentor {name} zu {command}
+CommandIntent das Garagentor zu {command}
+CommandIntent die Garagentore zu {command}
+CommandIntent Garagentor {name} zu {command}
+CommandIntent {command} Tor {name}
+CommandIntent {command} Garagentor {name}
+CommandIntent {command} das Tor
+CommandIntent {command} die Tore
+CommandIntent {command} die Garage
+CommandIntent {command} die Garagentore
+CommandIntent {command} alles
+CommandIntent {command} alle Tore
+CommandIntent {command} alle Garagentore
+StatusIntent {name}
+StatusIntent nach {name}
+StatusIntent nach dem Status
+StatusIntent nach dem Status von Tor {name}
+StatusIntent nach dem Status von {name}
+StatusIntent nach dem Status von Tuer {name}
+StatusIntent nach dem Status von Garage {name}
+StatusIntent nach dem Status von Garagentor {name}
+StatusIntent wie ist der Status
+StatusIntent wie ist der jetzige Status
+StatusIntent wie ist der derzeitige Status
+StatusIntent nach dem Status von meinem Tor
+StatusIntent nach dem Status von den Toren
+StatusIntent nach dem Status von meiner Garage
+StatusIntent nach dem Status von meinen Garagentoren
+StatusIntent nach dem Status von {name}
+StatusIntent nach dem Status von Tor {name}
+StatusIntent nach dem Status von Garage {name}
+StatusIntent nach dem Status von {name} garage door
+StatusIntent ob {name} {state} ist
+StatusIntent ist {name} {state}
+StatusIntent ist Tor {name} {state}
+StatusIntent ist Garage {name} {state}
+StatusIntent ist Garagentor {name} {state}
+StatusIntent ist {name} nun {state}
+StatusIntent ist Tor {name} nun {state}
+StatusIntent ist Garage {name} jetzt {state}
+StatusIntent ist Garagentor {name} jetzt {state}
+StatusIntent ist mein {name} jetzt {state}
+StatusIntent ist das Tor {name} {state}
+StatusIntent ist die Garage {name} {state}
+StatusIntent ist das Garagentor {name} {state}
+HistoryIntent wann war {name} {state}
+HistoryIntent wann war Tor {name} {state}
+HistoryIntent wann war Garage {name} {state}
+HistoryIntent wann war Garagentor {name} {state}
+HistoryIntent wie lange ist {name} {state}
+HistoryIntent wie lange ist Tor {name} {state}
+HistoryIntent wie lange ist Garagentür {name} {state}
+HistoryIntent wie lange war {name} {state}
+HistoryIntent wie lange war Tor {name} {state}
+HistoryIntent wie lange war Garagentor {name} {state}
+HistoryIntent was waren die letzten Ereignisse
+HistoryIntent nach den vergangenen Ereignissen
+HistoryIntent nach Ereignissen
+HistoryIntent nach letzte Ereignisse
+HistoryIntent nach Zeiten

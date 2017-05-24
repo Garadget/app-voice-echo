@@ -1,0 +1,9 @@
+oeffnen
+geoeffnet
+schliessen
+geschlossen
+stoppen
+gestopped
+hoch
+runter
+nicht erreichbar

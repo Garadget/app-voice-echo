@@ -24,7 +24,7 @@ const handlers = {
       });
     },
     'AMAZON.HelpIntent': function() {
-        this.emit(':tell', this.t('HELP_MESSAGE'));
+        this.emit(':ask', this.t('HELP_MESSAGE'), this.t('WELCOME_MESSAGE_RETRY'));
     },
     'AMAZON.StopIntent': function() {
         this.emit(':tell', this.t('STOP_MESSAGE'));
@@ -510,9 +510,15 @@ const a_languageStrings = {
     'en-US': {
         translation: {
             SKILL_NAME: 'Garadget Voice Control',
-            WELCOME_MESSAGE: 'Welcome to Garadget skill - voice control for your garage doors. You can tell Garadget to open or close doors or ask Garadget about their status ... Let\'s give it a try!',
+            WELCOME_MESSAGE: 'Welcome to Garadget skill - voice control for your garage doors. ' +
+              'You can tell Garadget to open or close doors or ask Garadget about their status ... ' +
+              'Let\'s give it a try!',
             WELCOME_MESSAGE_RETRY: 'You can say things like: close all doors, or what is the status of door one.',
-            HELP_MESSAGE: 'This skill allows you to control and monitor your Garadget-equipped garage doors. You can tell Garadget to open or close doors and ask about the status or recent events. If there are multiple doors in the account, they can be identified by name or number. You can say things like, Alexa, tell Garadget to close door \'Home\' ... or Alexa, ask Garadget about status of door One.',
+            HELP_MESSAGE: 'This skill allows you to control and monitor your Garadget-equipped garage doors. ' +
+              'You can tell Garadget to open or close doors and ask about the status or recent events. ' +
+              'If there are multiple doors in the account, they can be identified by name or number. ' +
+              'You can say things like, Alexa, tell Garadget to close door \'Home\' ... ' +
+              'or Alexa, ask Garadget about status of door One. Now, how Garadget can help you?',
             STOP_MESSAGE: 'Thanks for using Garadget, Goodbye!',
 
             WORD_YES: 'yes',
@@ -587,7 +593,98 @@ const a_languageStrings = {
             ERROR_NOT_FOUND: 'There is no door \'%s\' in your account. Available choices are: %s.',
             ERROR_PARTICLE: 'There was error wile talking to Particle server. Please try again later.',
             ERROR_UNKNOWN_TIME: 'Unknown Time'
-        },
+        }
+    },
+    'de-DE': {
+        translation: {
+            SKILL_NAME: 'Garadget Voice Control',
+            WELCOME_MESSAGE: 'Willkommen zu Garadget - die Sprachsteuerung fuer Ihre Garage. ' +
+              'Sie koennen Garadget zum Oeffnen oder Schliessen Ihrer Garagentore nutzen oder auch den aktuellen Status abfagen ... ' +
+              'Lass es uns versuchen!',
+            WELCOME_MESSAGE_RETRY: 'Probiere es mit: Schliesse alle Tore, oder Wie ist der Status von Tor eins. ',
+            HELP_MESSAGE: 'Mit diesem Skill können Sie alle mit Garadget ausgerüsteten Garagentore steuern und überwachen. ' +
+              'Bitten Sie Garadget Ihre Garagentore zu öffnen oder zu schliessen und auch den aktuellen Status oder vergangene Ereignisse abzufragen. ' +
+              'Wenn Sie mehrere Tore eingerichtet haben, so können Sie diese mit dem Namen oder einer fortlaufenden Zahl auswählen. ' +
+              'Nutzen Sie Befehle wie, Alexa, bitte Garadget das Tor "vorne" zu schliessen ... oder, Alexa, frage Garadget nach dem Status von Tor eins. ' +
+              'Wie hilft Ihnen das GARADGET SKILL?',
+
+            STOP_MESSAGE: 'Danke und bis bald!',
+
+            WORD_YES: 'ja',
+            WORD_NO: 'nein',
+            WORD_AND: 'und',
+
+            COMMAND_OPEN: 'oeffne',
+            COMMAND_CLOSE: 'schließe',
+            COMMAND_STOP: 'stoppe',
+
+            STATUS_OPEN: 'offen',
+            STATUS_OPENING: 'wird geoeffnet',
+            STATUS_CLOSED: 'geschlossen',
+            STATUS_CLOSING: 'wird geschlossen',
+            STATUS_STOPPED: 'gestoppt',
+            STATUS_OFFLINE: 'nicht mit dem Internet verbunden',
+
+            STATUS_ALREADY_OPEN: 'Tor \'%s\' ist schon offen.',
+            STATUS_ALREADY_OPENING: 'Tor \'%s\' wird schon geoeffnet.',
+            STATUS_ALREADY_CLOSED: 'Tor \'%s\' war schon geschlossen.',
+            STATUS_ALREADY_CLOSING: 'Tor \'%s\' wird schon geschlossen.',
+            STATUS_ALREADY_STOPPED: 'Tor \'%s\' bewegt sich zur Zeit nicht.',
+
+            CONFIRM_ALL_OPENING: 'Es werden alle Tore geoeffnet.',
+            CONFIRM_ALL_CLOSING: 'Es werden alle Tore geschlossen.',
+            CONFIRM_ALL_STOPPING: 'Stoppe alle Tore.',
+            CONFIRM_SINGLE_OPENING: 'Oeffne.',
+            CONFIRM_SINGLE_CLOSING: 'Schliesse.',
+            CONFIRM_SINGLE_STOPPING: 'Stoppe.',
+            CONFIRM_ONE_OPENING: 'Oeffne %s.',
+            CONFIRM_ONE_CLOSING: 'Schliesse %s.',
+            CONFIRM_ONE_STOPPING: 'Stoppe %s.',
+
+            REPORT_ONE_OPEN: '\'%s\' ist offen.',
+            REPORT_ONE_OPENING: '\'%s\' wird geoeffnet.',
+            REPORT_ONE_CLOSED: '\'%s\' ist zu.',
+            REPORT_ONE_CLOSING: '\'%s\' wird geschlossen.',
+            REPORT_ONE_STOPPED: '\'%s\' wurde gestoppt.',
+            REPORT_ONE_OFFLINE: '\'%s\' ist zur Zeit nicht erreichbar.',
+            REPORT_ONE_ERROR: '\'%s\' reagiert nicht.',
+
+            REPORT_ALL_OPEN: 'Es sind alle Tore offen.',
+            REPORT_ALL_OPENING: 'Alle Tore werden geoeffnet.',
+            REPORT_ALL_CLOSED: 'Alle Tore sind zu.',
+            REPORT_ALL_CLOSING: 'Alle Tore werden geschlossen.',
+            REPORT_ALL_STOPPED: 'Alle Tore gestoppt.',
+            REPORT_ALL_OFFLINE: 'Alle Tore sind nicht erreichbar.',
+            REPORT_ALL_ERROR: 'Die Tore reagieren leider nicht.',
+
+            HISTORY_OPEN: '\'%s\' ist offen seit %s.',
+            HISTORY_OPENING:'\'%s\' wird geoeffnet seit %s.',
+            HISTORY_CLOSED:'\'%s\' ist geschlossen seit %s.',
+            HISTORY_CLOSING:'\'%s\' wird geschlossen seit %s.',
+            HISTORY_STOPPED:'\'%s\' wurde gestoppt seit %s.',
+            HISTORY_OFFLINE:'\'%s\' ist nicht verbunden seit %s.',
+            HISTORY_ERROR: '\'%s\' reagierte nicht.',
+
+            TIME_S: 'Sekunden',
+            TIME_M: 'Minuten',
+            TIME_H: 'Stunden',
+            TIME_D: 'Tage',
+
+            CARD_TITLE_COMMAND: "Garadget Kommandos",
+            CARD_TITLE_STATUS: "Garadget Status",
+            CARD_TITLE_HISTORY: "Garadget Report",
+
+            ERROR_NO_COMMAND: 'Bitte versuchen Sie folgende Kommandos \'oeffne\', \'schliesse\' oder \'stoppe\'.',
+            ERROR_BAD_COMMAND: '\'%s\' ist kein gueltiger Befehl. Probieren Sie: Oeffne, Schliesse und Stoppe.',
+            ERROR_NO_DOORS: 'Ich kann dieses Tor nicht in Ihren Einstellungen finden. ' +
+              'Bitte nutzen Sie die Garadget App zum Einfuegen eines neuen Tores.',
+            ERROR_UNAUTHORIZED: 'Um diese App zu nutzen muessen Sie sich bei Garadget registrieren. ' +
+              'Bitte oeffnen Sie die Alexa App und verknuepfen Sie Ihren Amazon Account mit dem Garadget Account.',
+            ERROR_BAD_NUMBER: 'Es gibt Tor Nummer %s nicht in Ihrem Account. Moeglich sind derzeit 1 bis %u.',
+            ERROR_NOT_FOUND: 'Es gibt kein Tor \'%s\' in Ihrem Account. Moeglich waere: %s.',
+            ERROR_PARTICLE: 'Es gibt leider ein Verbindungsproblem mit dem Garadgetserver. Bitte probieren Sie es spaeter noch einmal.',
+            ERROR_UNKNOWN_TIME: 'Unbekannte Zeit'
+        }
     }
 };
 

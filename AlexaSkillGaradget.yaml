@@ -1,0 +1,20 @@
+﻿AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: Alexa Skill for Garadget
+Resources:
+  AlexaSkillGaradget:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Handler: index.handler
+      Runtime: nodejs4.3
+      CodeUri: .
+      Description: Alexa Skill for Garadget
+      MemorySize: 128
+      Timeout: 10
+      Role: 'arn:aws:iam::693763751516:role/ApiGatewayBasicPermission'
+      Events:
+        AlexaSkillEvent:
+          Type: AlexaSkill
+      Environment:
+        Variables:
+          appId: amzn1.ask.skill.ee90f6b1-6246-4e41-95b0-b453dd7f02de

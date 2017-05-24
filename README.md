@@ -1,5 +1,9 @@
 # Alexa skill for Garadget
 Skill implemented in Node.js and hosted in AWS Lambda.
+The code relies on Alexa Skills Kit SDK. It can be deployed as a node package using the following command from within your Node.js environment:
+
+    npm install --save alexa-sdk
+
 
 ## Contributions
 Please feel free to clone the repo and create your personal developer versions of the skill to use with your Garadget or for any other purpose.
