@@ -169,7 +169,7 @@ GaradgetAccount.prototype.f_select = function (s_name, f_callback) {
       if (s_name > o_this.a_devices.length)
         return f_callback('ERROR_BAD_NUMBER');
       console.log("GetByName: Numeric");
-      o_this.a_selectedDevices.push(o_this.a_devices[parseInt(s_name) - 1]);
+      o_this.a_selectedDevices.push(o_this.a_devices[parseInt(s_name, 10) - 1]);
       return f_callback();
     }
     return f_callback('ERROR_NOT_FOUND');
@@ -185,7 +185,7 @@ GaradgetAccount.prototype.f_selectValidated = function (f_callback) {
     s_receivedName,
     function(s_error) {
 
-      var a_device, n_device;
+      var n_device;
       if (s_error) {
         console.log('ERROR: ' + s_error);
         switch (s_error) {
@@ -595,11 +595,187 @@ const a_languageStrings = {
             ERROR_UNKNOWN_TIME: 'Unknown Time'
         }
     },
+    'en-CA': {
+        translation: {
+            SKILL_NAME: 'Garadget Voice Control',
+            WELCOME_MESSAGE: 'Welcome to Garadget skill - voice control for your garage doors. ' +
+              'You can tell Garadget to open or close doors or ask Garadget about their status ... ' +
+              'Let\'s give it a try!',
+            WELCOME_MESSAGE_RETRY: 'You can say things like: close all doors, or what is the status of door one.',
+            HELP_MESSAGE: 'This skill allows you to control and monitor your Garadget-equipped garage doors. ' +
+              'You can tell Garadget to open or close doors and ask about the status or recent events. ' +
+              'If there are multiple doors in the account, they can be identified by name or number. ' +
+              'You can say things like, Alexa, tell Garadget to close door \'Home\' ... ' +
+              'or Alexa, ask Garadget about status of door One. Now, how Garadget can help you?',
+            STOP_MESSAGE: 'Thanks for using Garadget, Goodbye!',
+
+            WORD_YES: 'yes',
+            WORD_NO: 'no',
+            WORD_AND: 'and',
+
+            COMMAND_OPEN: 'open',
+            COMMAND_CLOSE: 'close',
+            COMMAND_STOP: 'stop',
+
+            STATUS_OPEN: 'open',
+            STATUS_OPENING: 'opening',
+            STATUS_CLOSED: 'closed',
+            STATUS_CLOSING: 'closing',
+            STATUS_STOPPED: 'stopped',
+            STATUS_OFFLINE: 'offline',
+
+            STATUS_ALREADY_OPEN: 'The door \'%s\' was already open.',
+            STATUS_ALREADY_OPENING: 'The door \'%s\' was already opening.',
+            STATUS_ALREADY_CLOSED: 'The door \'%s\' was already closed.',
+            STATUS_ALREADY_CLOSING: 'The door \'%s\' was already closing.',
+            STATUS_ALREADY_STOPPED: 'The door \'%s\' was not moving.',
+
+            CONFIRM_ALL_OPENING: 'Opening all garage doors.',
+            CONFIRM_ALL_CLOSING: 'Closing all garage doors.',
+            CONFIRM_ALL_STOPPING: 'Stopping all garage doors.',
+            CONFIRM_SINGLE_OPENING: 'Opening.',
+            CONFIRM_SINGLE_CLOSING: 'Closing.',
+            CONFIRM_SINGLE_STOPPING: 'Stopping.',
+            CONFIRM_ONE_OPENING: 'Opening %s.',
+            CONFIRM_ONE_CLOSING: 'Closing %s.',
+            CONFIRM_ONE_STOPPING: 'Stopping %s.',
+
+            REPORT_ONE_OPEN: '\'%s\' is open.',
+            REPORT_ONE_OPENING: '\'%s\' is opening.',
+            REPORT_ONE_CLOSED: '\'%s\' is closed.',
+            REPORT_ONE_CLOSING: '\'%s\' is closing.',
+            REPORT_ONE_STOPPED: '\'%s\' is stopped.',
+            REPORT_ONE_OFFLINE: '\'%s\' is currently offline.',
+            REPORT_ONE_ERROR: '\'%s\' did not respond.',
+
+            REPORT_ALL_OPEN: 'All doors are open.',
+            REPORT_ALL_OPENING: 'All doors are opening.',
+            REPORT_ALL_CLOSED: 'All doors are closed.',
+            REPORT_ALL_CLOSING: 'All doors are closing.',
+            REPORT_ALL_STOPPED: 'All doors are stopped.',
+            REPORT_ALL_OFFLINE: 'All doors are offline.',
+            REPORT_ALL_ERROR: 'Doors did not respond.',
+
+            HISTORY_OPEN: '\'%s\' has been open for %s.',
+            HISTORY_OPENING:'\'%s\' has been opening for %s.',
+            HISTORY_CLOSED:'\'%s\' has been closed for %s.',
+            HISTORY_CLOSING:'\'%s\' has been closing for %s.',
+            HISTORY_STOPPED:'\'%s\' has been stopped for %s.',
+            HISTORY_OFFLINE:'\'%s\' has been offline for %s.',
+            HISTORY_ERROR: '\'%s\' did not respond.',
+
+            TIME_S: 'seconds',
+            TIME_M: 'minutes',
+            TIME_H: 'hours',
+            TIME_D: 'days',
+
+            CARD_TITLE_COMMAND: "Garadget Command",
+            CARD_TITLE_STATUS: "Garadget Status",
+            CARD_TITLE_HISTORY: "Garadget History",
+
+            ERROR_NO_COMMAND: 'Please give a command such as \'open\', \'close\' or \'stop\'.',
+            ERROR_BAD_COMMAND: '\'%s\' is not a valid command. Available commands are: open, close and stop.',
+            ERROR_NO_DOORS: 'I couldn\'t find any doors in your account. Please use mobile app to add Garadget controllers.',
+            ERROR_UNAUTHORIZED: 'You must have a Garadget account to use this skill. Please use the Alexa app to link your Amazon account with your Garadget Account.',
+            ERROR_BAD_NUMBER: 'There is no door number %s in your account. Currently available numberic choices are 1 through %u.',
+            ERROR_NOT_FOUND: 'There is no door \'%s\' in your account. Available choices are: %s.',
+            ERROR_PARTICLE: 'There was error wile talking to Particle server. Please try again later.',
+            ERROR_UNKNOWN_TIME: 'Unknown Time'
+        }
+    },
+    'en-GB': {
+        translation: {
+            SKILL_NAME: 'Garadget Voice Control',
+            WELCOME_MESSAGE: 'Welcome to Garadget skill - voice control for your garage doors. ' +
+              'You can tell Garadget to open or close doors or ask Garadget about their status ... ' +
+              'Let\'s give it a try!',
+            WELCOME_MESSAGE_RETRY: 'You can say things like: close all doors, or what is the status of door one.',
+            HELP_MESSAGE: 'This skill allows you to control and monitor your Garadget-equipped garage doors. ' +
+              'You can tell Garadget to open or close doors and ask about the status or recent events. ' +
+              'If there are multiple doors in the account, they can be identified by name or number. ' +
+              'You can say things like, Alexa, tell Garadget to close door \'Home\' ... ' +
+              'or Alexa, ask Garadget about status of door One. Now, how Garadget can help you?',
+            STOP_MESSAGE: 'Thanks for using Garadget, Goodbye!',
+
+            WORD_YES: 'yes',
+            WORD_NO: 'no',
+            WORD_AND: 'and',
+
+            COMMAND_OPEN: 'open',
+            COMMAND_CLOSE: 'close',
+            COMMAND_STOP: 'stop',
+
+            STATUS_OPEN: 'open',
+            STATUS_OPENING: 'opening',
+            STATUS_CLOSED: 'closed',
+            STATUS_CLOSING: 'closing',
+            STATUS_STOPPED: 'stopped',
+            STATUS_OFFLINE: 'offline',
+
+            STATUS_ALREADY_OPEN: 'The door \'%s\' was already open.',
+            STATUS_ALREADY_OPENING: 'The door \'%s\' was already opening.',
+            STATUS_ALREADY_CLOSED: 'The door \'%s\' was already closed.',
+            STATUS_ALREADY_CLOSING: 'The door \'%s\' was already closing.',
+            STATUS_ALREADY_STOPPED: 'The door \'%s\' was not moving.',
+
+            CONFIRM_ALL_OPENING: 'Opening all garage doors.',
+            CONFIRM_ALL_CLOSING: 'Closing all garage doors.',
+            CONFIRM_ALL_STOPPING: 'Stopping all garage doors.',
+            CONFIRM_SINGLE_OPENING: 'Opening.',
+            CONFIRM_SINGLE_CLOSING: 'Closing.',
+            CONFIRM_SINGLE_STOPPING: 'Stopping.',
+            CONFIRM_ONE_OPENING: 'Opening %s.',
+            CONFIRM_ONE_CLOSING: 'Closing %s.',
+            CONFIRM_ONE_STOPPING: 'Stopping %s.',
+
+            REPORT_ONE_OPEN: '\'%s\' is open.',
+            REPORT_ONE_OPENING: '\'%s\' is opening.',
+            REPORT_ONE_CLOSED: '\'%s\' is closed.',
+            REPORT_ONE_CLOSING: '\'%s\' is closing.',
+            REPORT_ONE_STOPPED: '\'%s\' is stopped.',
+            REPORT_ONE_OFFLINE: '\'%s\' is currently offline.',
+            REPORT_ONE_ERROR: '\'%s\' did not respond.',
+
+            REPORT_ALL_OPEN: 'All doors are open.',
+            REPORT_ALL_OPENING: 'All doors are opening.',
+            REPORT_ALL_CLOSED: 'All doors are closed.',
+            REPORT_ALL_CLOSING: 'All doors are closing.',
+            REPORT_ALL_STOPPED: 'All doors are stopped.',
+            REPORT_ALL_OFFLINE: 'All doors are offline.',
+            REPORT_ALL_ERROR: 'Doors did not respond.',
+
+            HISTORY_OPEN: '\'%s\' has been open for %s.',
+            HISTORY_OPENING:'\'%s\' has been opening for %s.',
+            HISTORY_CLOSED:'\'%s\' has been closed for %s.',
+            HISTORY_CLOSING:'\'%s\' has been closing for %s.',
+            HISTORY_STOPPED:'\'%s\' has been stopped for %s.',
+            HISTORY_OFFLINE:'\'%s\' has been offline for %s.',
+            HISTORY_ERROR: '\'%s\' did not respond.',
+
+            TIME_S: 'seconds',
+            TIME_M: 'minutes',
+            TIME_H: 'hours',
+            TIME_D: 'days',
+
+            CARD_TITLE_COMMAND: "Garadget Command",
+            CARD_TITLE_STATUS: "Garadget Status",
+            CARD_TITLE_HISTORY: "Garadget History",
+
+            ERROR_NO_COMMAND: 'Please give a command such as \'open\', \'close\' or \'stop\'.',
+            ERROR_BAD_COMMAND: '\'%s\' is not a valid command. Available commands are: open, close and stop.',
+            ERROR_NO_DOORS: 'I couldn\'t find any doors in your account. Please use mobile app to add Garadget controllers.',
+            ERROR_UNAUTHORIZED: 'You must have a Garadget account to use this skill. Please use the Alexa app to link your Amazon account with your Garadget Account.',
+            ERROR_BAD_NUMBER: 'There is no door number %s in your account. Currently available numberic choices are 1 through %u.',
+            ERROR_NOT_FOUND: 'There is no door \'%s\' in your account. Available choices are: %s.',
+            ERROR_PARTICLE: 'There was error wile talking to Particle server. Please try again later.',
+            ERROR_UNKNOWN_TIME: 'Unknown Time'
+        }
+    },
     'de-DE': {
         translation: {
             SKILL_NAME: 'Garadget Voice Control',
             WELCOME_MESSAGE: 'Willkommen zu Garadget - die Sprachsteuerung fuer Ihre Garage. ' +
-              'Sie koennen Garadget zum Oeffnen oder Schliessen Ihrer Garagentore nutzen oder auch den aktuellen Status abfagen ... ' +
+              'Sie "können Garadget zum Oeffnen oder Schliessen Ihrer Garagentore nutzen oder auch den aktuellen Status abfragen ... ' +
               'Lass es uns versuchen!',
             WELCOME_MESSAGE_RETRY: 'Probiere es mit: Schliesse alle Tore, oder Wie ist der Status von Tor eins. ',
             HELP_MESSAGE: 'Mit diesem Skill können Sie alle mit Garadget ausgerüsteten Garagentore steuern und überwachen. ' +

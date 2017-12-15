@@ -1,0 +1,9 @@
+open
+opened
+close
+closed
+stop
+stopped
+up
+down
+offline
